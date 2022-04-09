@@ -7,6 +7,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.Toast;
+import android.widget.Button;
+import android.view.View;
+import android.content.Intent;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.Legend;
@@ -33,67 +36,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //References chart of name chart
-        chart = findViewById(R.id.chart);
-
-
-        LineData data = new LineData();
-        chart.setData(data);
-        YAxis yAxis = chart.getAxisLeft();
-        yAxis.setAxisMaximum(50);
-        yAxis.setAxisMinimum(0);
-
-
-
-
-
-        /*for (int i = 0; i < 20; i++) {
-            ILineDataSet set = data.getDataSetByIndex(0);
-            if (set == null) {
-                set = new LineDataSet(null, "Data");
-                data.addDataSet(set);
-            }
-            data.addEntry(new Entry(i, i+5),0);
-            data.notifyDataChanged();
-
-            chart.notifyDataSetChanged();
-            chart.moveViewToX(i+1);
-            try
-            {
-                Thread.sleep(100);
-            }
-            catch(InterruptedException ex)
-            {
-                Thread.currentThread().interrupt();
-            }
-        }*/
-
     }
 
-    private Thread thread;
-
-    private void dummyData(LineData data, int i) {
-        boolean flag = true;
-
-        ILineDataSet set = data.getDataSetByIndex(0);
-        if (set == null) {
-            set = new LineDataSet(null, "Data");
-            data.addDataSet(set);
-        }
-        data.addEntry(new Entry(i, i+3), 0);
-        data.notifyDataChanged();
-        chart.notifyDataSetChanged();
-        chart.moveViewToX(i+1);
-
-        chart.setVisibleXRangeMaximum(30);
-        try
-        {
-            Thread.sleep(100);
-        }
-        catch(InterruptedException ex)
-        {
-            Thread.currentThread().interrupt();
-        }
-
-    }
 }

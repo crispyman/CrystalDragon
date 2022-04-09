@@ -37,11 +37,10 @@ public class GraphScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_graph_screen2);
 
         //References chart of name chart
         chart = findViewById(R.id.chart);
-
 
         LineData data = new LineData();
         chart.setData(data);
@@ -54,8 +53,6 @@ public class GraphScreen extends AppCompatActivity {
             readData(dataBased);
             dataBased = (float)Math.random()*150;
         }
-
-
     }
 
     //Threading may not be required if data is being passed from database
