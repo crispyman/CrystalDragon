@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">CrystalDragon</string>
-    <string name="Datapoint01">Enter a string</string>
+    <string name="Datapoint01">Username</string>
     <string name="Datapoint02">Enter a intiger value</string>
 </resources>
