@@ -97,7 +97,7 @@ public class GraphScreen extends AppCompatActivity {
         chart.notifyDataSetChanged();
 
         //testing 200
-        chart.setVisibleXRangeMaximum(200);
+        chart.setVisibleXRangeMaximum(50);
 
         chart.moveViewToX(dataPoint.getEntryCount());
     }
