@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CrystalDragon</string>
+    <string name="Datapoint01">Give me a name</string>
+    <string name="Datapoint02">Give me a number</string>
 </resources>
