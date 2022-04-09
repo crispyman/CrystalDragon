@@ -5,7 +5,7 @@ public class database {
     private int dataPoint02;
 
     // constructor
-    public datahold(String dataPoint01, int dataPoint02) {
+    public database(String dataPoint01, int dataPoint02) {
         this.dataPoint01 = dataPoint01;
         this.dataPoint02 = dataPoint02;
     }
